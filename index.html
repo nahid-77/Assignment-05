@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- tailwind-CSS links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy UI links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Poppins-font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="poppins-regular bg-[#F4F7FF]">
+    <div class="p-5 max-w-7xl mx-auto">
+      
+        <nav
+          class="flex justify-between items-center mb-5 p-5 bg-[#FFFFFF] rounded-2xl shadow-md"
+        >
+          <div class="flex gap-2 items-center">
+            <img src="./assets/logo.png" alt="" />
+            <h1 class="text-4xl font-light">
+              Dev<span class="text-[#00303C] font-bold">Board</span>
+            </h1>
+          </div>
+          <div class="flex gap-3">
+            <div class="flex items-center p-3 gap-3 rounded-3xl bg-[#F4F7FF]">
+              <img src="./assets/checkbox.png" alt="" />
+              <span class="text-3xl font-bold">23</span>
+            </div>
+            <div class="p-3 rounded-full bg-[#F4F7FF]">
+              <img src="./assets/theme-btn.png" alt="" />
+            </div>
+          </div>
+        </nav>
+   
+
+      <div class="flex  rounded-2xl gap-5">
+        <!-- tasks-related div -->
+        <div class="p-5 bg-[#FFFFFF] rounded-2xl shadow-md gap-5">
+          <div class="flex justify-between items-center mb-5 gap-3">
+            <div class="flex items-center gap-2 bg-[#F4F7FF] rounded-xl p-5">
+              <div class="bg-[#FFFFFF] rounded-full p-3">
+                <img src="./assets/checkbox.png" alt="" />
+              </div>
+              <div>
+                <p class="text-base font-medium text-[#00303C]">
+                  Task Assigned
+                </p>
+                <h3 class="text-3xl font-bold">05</h3>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center items-center gap-3 p-4 bg-gradient-to-r from-[#3752FD] from-0.419% via-[#6C7FFA] via-52.66% to-[#9BA8F8] to-99.733%"
+            >
+              <div>
+                <img src="./assets/board.png" alt="" />
+              </div>
+              <h2 class="font-medium text-[#FFFFFF] text-2xl">
+                Discover Something <br />
+                New Today!
+              </h2>
+            </div>
+
+            <div class="flex items-center gap-2 bg-[#F4F7FF] rounded-xl p-5">
+              <div class="bg-[#FFFFFF] rounded-full p-3">
+                <img src="./assets/calender.png" alt="" />
+              </div>
+
+              <h3 class="text-lg font-bold">
+                Wed , <br />
+                Jul 28 2025
+              </h3>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-3 gap-5">
+            <!-- box-01 -->
+            <div class="bg-[#F4F7FF] rounded-2xl p-4">
+              <span class="bg-[#FFFFFF] p-2 rounded-lg">ShopEase</span>
+              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Fix Mobile Button Issue</h2>
+              
+              <details class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+                <summary>Debug using Chrome DevTools, check for overlapping elements...</summary>
+                and
+                ensure onClick works properly and ensure onClick works properly
+              </details>
+              <div class="flex mt-5 justify-between items-center">
+                <div  class="text-[#00303C]">
+                  <h4 class="text-sm">Deadline</h4>
+                  <h3 class="font-medium text-base">21 March 2025</h3>
+                </div>
+                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+              </div>
+            </div>
+
+            <!-- box-02 -->
+            <div class="bg-[#F4F7FF] rounded-2xl p-4">
+              <span class="bg-[#FFFFFF] p-2 rounded-lg">CloudSync</span>
+              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Add Dark <br> Mode</h2>
+              
+              <details class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+                <summary>Debug using Chrome DevTools, check for overlapping elements...</summary>
+                 variables dynamically, and apply a smooth transition effect.
+              </details>
+              <div class="flex mt-5 justify-between items-center">
+                <div  class="text-[#00303C]">
+                  <h4 class="text-sm">Deadline</h4>
+                  <h3 class="font-medium text-base">25 March 2025</h3>
+                </div>
+                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+              </div>
+            </div>
+
+            <!-- box-03 -->
+            <div class="bg-[#F4F7FF] rounded-2xl p-4">
+              <span class="bg-[#FFFFFF] p-2 rounded-lg">SwiftPay</span>
+              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Optimize <br> Home page </h2>
+              
+              <details class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+                <summary>Debug using Chrome DevTools, check for overlapping elements...</summary>
+                and
+                ensure onClick works properly and ensure onClick works properly
+              </details>
+              <div class="flex mt-5 justify-between items-center">
+                <div  class="text-[#00303C]">
+                  <h4 class="text-sm">Deadline</h4>
+                  <h3 class="font-medium text-base">23 March 2025</h3>
+                </div>
+                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+              </div>
+            </div>
+
+            <!-- box-04 -->
+            <div class="bg-[#F4F7FF] rounded-2xl p-4">
+              <span class="bg-[#FFFFFF] p-2 rounded-lg">Meta</span>
+              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Add new  <br> emoji 🤲</h2>
+              
+              <details class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+                <summary>Debug using Chrome DevTools, check for overlapping elements...</summary>
+                and
+                ensure onClick works properly and ensure onClick works properly
+              </details>
+              <div class="flex mt-5 justify-between items-center">
+                <div  class="text-[#00303C]">
+                  <h4 class="text-sm">Deadline</h4>
+                  <h3 class="font-medium text-base">22 March 2025</h3>
+                </div>
+                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+              </div>
+            </div>
+
+            <!-- box-05 -->
+            <div class="bg-[#F4F7FF] rounded-2xl p-4">
+              <span class="bg-[#FFFFFF] p-2 rounded-lg">Google LLC</span>
+              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Integrate OpenAI <br> API</h2>
+              
+              <details class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+                <summary>Debug using Chrome DevTools, check for overlapping elements...</summary>
+                and
+                ensure onClick works properly and ensure onClick works properly
+              </details>
+              <div class="flex mt-5 justify-between items-center">
+                <div  class="text-[#00303C]">
+                  <h4 class="text-sm">Deadline</h4>
+                  <h3 class="font-medium text-base">27 March 2025</h3>
+                </div>
+                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+              </div>
+            </div>
+
+            <!-- box-06 -->
+            <div class="bg-[#F4F7FF] rounded-2xl p-4">
+              <span class="bg-[#FFFFFF] p-2 rounded-lg">Glassdoar</span>
+              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Improve Job searching </h2>
+              
+              <details class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+                <summary>Debug using Chrome DevTools, check for overlapping elements...</summary>
+                and
+                ensure onClick works properly and ensure onClick works properly
+              </details>
+              <div class="flex mt-5 justify-between items-center">
+                <div  class="text-[#00303C]">
+                  <h4 class="text-sm">Deadline</h4>
+                  <h3 class="font-medium text-base">29 March 2025</h3>
+                </div>
+                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- activity-log related div -->
+         <div class="p-5 bg-[#FFFFFF] rounded-xl shadow-md gap-5">
+            <div class="flex flex-col justify-center items-center">
+                <div class="flex gap-3 mb-5">
+                    <img src="./assets/activity.png" alt="">
+                    <h2 class="text-[#00303C] text-xl font-medium">Activity Log</h2>
+                </div>
+                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-4 rounded-lg mb-5">Clear History</button>
+            </div>
+            <p class="bg-[#F4F7FF] p-3 rounded-lg mb-5">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+            <p class="bg-[#F4F7FF] p-3 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+         </div>
+      </div>
+    </div>
+  </body>
+</html>
