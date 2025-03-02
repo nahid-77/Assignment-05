@@ -1,9 +1,16 @@
- .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
- 
-  
+#discover-new {
+  border-radius: 12px;
+
+  background: linear-gradient(
+    130.7deg,
+    rgb(55, 82, 253) 0.419%,
+    rgb(108, 127, 250) 52.66%,
+    rgb(155, 168, 248) 99.733%
+  );
+}
