@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- tailwind-CSS links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy UI links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Poppins-font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="poppins-regular bg-[#F4F7FF]">
+    <div class="p-5 max-w-7xl mx-auto">
+      <nav
+        class="flex justify-between items-center mb-5 p-5 bg-[#FFFFFF] rounded-2xl shadow-md"
+      >
+        <div class="flex gap-2 items-center">
+          <img src="./assets/logo.png" alt="" />
+          <h1 class="text-4xl font-light">
+            Dev<span class="text-[#00303C] font-bold">Board</span>
+          </h1>
+        </div>
+        <button
+          onclick="backToDesk()" class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-4 rounded-lg mb-5"
+        >
+          Back to Desk
+        </button>
+      </nav>
+      <h1 class="text-4xl font-extrabold text-center my-8">Blogs</h1>
+      <div class="">
+        <!-- Question-01 :  -->
+        <div class="mb-5 p-5 bg-[#FFFFFF] rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h2>
+          <hr class="my-6" />
+          <p class="text-base text-[#000000]">
+            We can select an element in the DOM in different ways : <br />
+            1. getElementById() <br />
+            2. getElementsByClassName() <br />
+            3. getElementsByTagName() <br />
+            4. querySelector() <br />
+            5. querySelectorAll()
+          </p>
+        </div>
+        <!-- Question-02 :  -->
+        <div class="mb-5 p-5 bg-[#FFFFFF] rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h2>
+          <hr class="my-6" />
+          <p class="text-base text-[#000000]">
+            We use innerHTML if we need to update or read HTML content. But we
+            use the innerText when we only use the visible text like in a p tag
+            or h1 to h6 tags and we use the textContent when we want all
+            text,all the elements and don't need HTML formatting.
+          </p>
+        </div>
+        <!-- Question-03 :  -->
+        <div class="mb-5 p-5 bg-[#FFFFFF] rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold">
+            Question-3: What is event delegation in the DOM?
+          </h2>
+          <hr class="my-6" />
+          <p class="text-base text-[#000000]">
+            Event delegation is a way to handle events more efficiently.Instead
+            of adding event listeners to multiple elements, we add one listener
+            to a parent element and check which child was clicked.
+          </p>
+        </div>
+        <!-- Question-04 :  -->
+        <div class="mb-5 p-5 bg-[#FFFFFF] rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold">
+            Question-4: What is event bubbling in the DOM?
+          </h2>
+          <hr class="my-6" />
+          <p class="text-base text-[#000000]">
+            Event bubbling means when we click on an element, the event first
+            happens on that element and then goes to its parent elements. WE can
+            stop this using event.stopPropagation().
+          </p>
+        </div>
+        <!-- Question-05 :  -->
+        <div class="mb-5 p-5 bg-[#FFFFFF] rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h2>
+          <hr class="my-6" />
+          <p class="text-base text-[#000000]">
+            We can create an element using document.createElement("tag").
+            <br />
+            To add it to the page, use appendChild(). <br />
+            To remove an element, use element.remove() or
+            parent.removeChild(child).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- script tags -->
+
+    <script>
+       
+    </script>
+    <script src="./JS/common-functions.js"></script>
+    <script src="./JS/date_time_colorSet.js"></script>
+  </body>
+</html>

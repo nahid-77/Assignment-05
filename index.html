@@ -39,7 +39,7 @@
               <img src="./assets/checkbox.png" alt="" />
               <span class="text-3xl font-bold">23</span>
             </div>
-            <div class="p-3 rounded-full bg-[#F4F7FF]">
+            <div id="theme-btn" class="p-3 rounded-full bg-[#F4F7FF] cursor-pointer">
               <img src="./assets/theme-btn.png" alt="" />
             </div>
           </div>
@@ -62,7 +62,7 @@
               </div>
             </div>
 
-            <div id="discover-new" class="flex justify-center items-center gap-3 p-4">
+            <div id="discover-new" class="flex justify-center items-center gap-3 p-4 cursor-pointer">
               <div>
                 <img src="./assets/board.png" alt="" />
               </div>
@@ -211,21 +211,10 @@
     <!-- script tags -->
 
     <script>
-      function updateDate() {
-          const now = new Date();
-          const options = { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' };
-          const formattedDate = now.toLocaleDateString('en-US', options);
-          
-          // Split the formatted date
-          const [weekday, month, day, year] = formattedDate.split(' ');
-  
-          document.getElementById("day").textContent = `${weekday}`;
-          document.getElementById("full-date").textContent = `${month} ${day} ${year}`;
-      }
-  
-      updateDate();
+     
   </script>
   <script src="./JS/common-functions.js"></script>
+  <script src="./JS/date_time_colorSet.js"></script>
     
   </body>
 </html>
