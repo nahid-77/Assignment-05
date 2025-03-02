@@ -24,29 +24,30 @@
   </head>
   <body class="poppins-regular bg-[#F4F7FF]">
     <div class="p-5 max-w-7xl mx-auto">
-      
-        <nav
-          class="flex justify-between items-center mb-5 p-5 bg-[#FFFFFF] rounded-2xl shadow-md"
-        >
-          <div class="flex gap-2 items-center">
-            <img src="./assets/logo.png" alt="" />
-            <h1 class="text-4xl font-light">
-              Dev<span class="text-[#00303C] font-bold">Board</span>
-            </h1>
+      <nav
+        class="flex justify-between items-center mb-5 p-5 bg-[#FFFFFF] rounded-2xl shadow-md"
+      >
+        <div class="flex gap-2 items-center">
+          <img src="./assets/logo.png" alt="" />
+          <h1 class="text-4xl font-light">
+            Dev<span class="text-[#00303C] font-bold">Board</span>
+          </h1>
+        </div>
+        <div class="flex gap-3">
+          <div class="flex items-center p-3 gap-3 rounded-3xl bg-[#F4F7FF]">
+            <img src="./assets/checkbox.png" alt="" />
+            <span id="total-tasks-done" class="text-3xl font-bold">23</span>
           </div>
-          <div class="flex gap-3">
-            <div class="flex items-center p-3 gap-3 rounded-3xl bg-[#F4F7FF]">
-              <img src="./assets/checkbox.png" alt="" />
-              <span class="text-3xl font-bold">23</span>
-            </div>
-            <div id="theme-btn" class="p-3 rounded-full bg-[#F4F7FF] cursor-pointer">
-              <img src="./assets/theme-btn.png" alt="" />
-            </div>
+          <div
+            id="theme-btn"
+            class="p-3 rounded-full bg-[#F4F7FF] cursor-pointer"
+          >
+            <img src="./assets/theme-btn.png" alt="" />
           </div>
-        </nav>
-   
+        </div>
+      </nav>
 
-      <div class="flex  rounded-2xl gap-5">
+      <div class="flex rounded-2xl gap-5">
         <!-- tasks-related div -->
         <div class="p-5 bg-[#FFFFFF] rounded-2xl shadow-md gap-5 w-9/12">
           <div class="flex justify-between items-center mb-5 gap-3">
@@ -58,11 +59,14 @@
                 <p class="text-base font-medium text-[#00303C]">
                   Task Assigned
                 </p>
-                <h3 class="text-2xl font-bold">05</h3>
+                <h3 id="total-tasks" class="text-2xl font-bold">06</h3>
               </div>
             </div>
 
-            <div id="discover-new" class="flex justify-center items-center gap-3 p-4 cursor-pointer">
+            <div
+              id="discover-new"
+              class="flex justify-center items-center gap-3 p-4 cursor-pointer"
+            >
               <div>
                 <img src="./assets/board.png" alt="" />
               </div>
@@ -70,151 +74,226 @@
                 Discover Something New Today!
               </h2>
             </div>
-            <div class="date-card flex items-center gap-2 bg-[#F4F7FF] rounded-xl p-5">
+            <div
+              class="date-card flex items-center gap-2 bg-[#F4F7FF] rounded-xl p-5"
+            >
               <div class="bg-[#FFFFFF] rounded-full p-3">
                 <img src="./assets/calender.png" alt="" />
               </div>
               <div class="date-text text-[#00303C]">
-                  <span class="day font-medium" id="day"></span> <br>
-                  <span class="full-date font-bold" id="full-date"></span>
+                <span class="day font-medium" id="day"></span> <br />
+                <span class="full-date font-bold" id="full-date"></span>
               </div>
+            </div>
           </div>
-          </div>
-          <hr class="my-6">
+          <hr class="my-6" />
           <div class="grid md:grid-cols-3 gap-5">
             <!-- box-01 -->
             <div class="bg-[#F4F7FF] rounded-2xl p-4">
               <span class="bg-[#FFFFFF] p-2 rounded-lg">ShopEase</span>
-              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Fix Mobile Button Issue</h2>
-              
-              <p class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+              <h2
+                id="card-title-1"
+                class="text-[#00303C] text-2xl font-medium mt-4"
+              >
+                Fix Mobile Button Issue
+              </h2>
+
+              <p
+                class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl"
+              >
                 Debug using Chrome DevTools, check for overlapping elements and
                 ensure onClick works properly and ensure onClick works properly
               </p>
               <div class="flex mt-5 justify-between items-center">
-                <div  class="text-[#00303C]">
+                <div class="text-[#00303C]">
                   <h4 class="text-sm">Deadline</h4>
                   <h3 class="font-medium text-base">21 March 2025</h3>
                 </div>
-                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+                <button
+                  id="completed-btn-1"
+                  class="completed-btn btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg"
+                >
+                  Completed
+                </button>
               </div>
             </div>
 
             <!-- box-02 -->
             <div class="bg-[#F4F7FF] rounded-2xl p-4">
               <span class="bg-[#FFFFFF] p-2 rounded-lg">CloudSync</span>
-              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Add Dark <br> Mode</h2>
-              
-              <p class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+              <h2
+                id="card-title-2"
+                class="text-[#00303C] text-2xl font-medium mt-4"
+              >
+                Add Dark <br />
+                Mode
+              </h2>
+
+              <p
+                class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl"
+              >
                 Debug using Chrome DevTools, check for overlapping elements and
                 ensure onClick works properly and ensure onClick works properly
               </p>
               <div class="flex mt-5 justify-between items-center">
-                <div  class="text-[#00303C]">
+                <div class="text-[#00303C]">
                   <h4 class="text-sm">Deadline</h4>
                   <h3 class="font-medium text-base">25 March 2025</h3>
                 </div>
-                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+                <button
+                  id="completed-btn-2"
+                  class="completed-btn btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg"
+                >
+                  Completed
+                </button>
               </div>
             </div>
 
             <!-- box-03 -->
             <div class="bg-[#F4F7FF] rounded-2xl p-4">
               <span class="bg-[#FFFFFF] p-2 rounded-lg">SwiftPay</span>
-              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Optimize Home page </h2>
-              
-              <p class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+              <h2
+                id="card-title-3"
+                class="text-[#00303C] text-2xl font-medium mt-4"
+              >
+                Optimize Home page 
+              </h2>
+
+              <p
+                class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl"
+              >
                 Debug using Chrome DevTools, check for overlapping elements and
                 ensure onClick works properly and ensure onClick works properly
               </p>
               <div class="flex mt-5 justify-between items-center">
-                <div  class="text-[#00303C]">
+                <div class="text-[#00303C]">
                   <h4 class="text-sm">Deadline</h4>
                   <h3 class="font-medium text-base">23 March 2025</h3>
                 </div>
-                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+                <button
+                  id="completed-btn-3"
+                  class="completed-btn btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg"
+                >
+                  Completed
+                </button>
               </div>
             </div>
 
             <!-- box-04 -->
             <div class="bg-[#F4F7FF] rounded-2xl p-4">
               <span class="bg-[#FFFFFF] p-2 rounded-lg">Meta</span>
-              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Add new emoji <br>🤲</h2>
-              
-              <p class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+              <h2
+                id="card-title-4"
+                class="text-[#00303C] text-2xl font-medium mt-4"
+              >
+                Add new emoji <br />🤲
+              </h2>
+
+              <p
+                class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl"
+              >
                 Debug using Chrome DevTools, check for overlapping elements and
                 ensure onClick works properly and ensure onClick works properly
               </p>
               <div class="flex mt-5 justify-between items-center">
-                <div  class="text-[#00303C]">
+                <div class="text-[#00303C]">
                   <h4 class="text-sm">Deadline</h4>
                   <h3 class="font-medium text-base">22 March 2025</h3>
                 </div>
-                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+                <button
+                  id="completed-btn-4"
+                  class="completed-btn btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg"
+                >
+                  Completed
+                </button>
               </div>
             </div>
 
             <!-- box-05 -->
             <div class="bg-[#F4F7FF] rounded-2xl p-4">
               <span class="bg-[#FFFFFF] p-2 rounded-lg">Google LLC</span>
-              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Integrate OpenAI API</h2>
-              
-              <p class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+              <h2
+                id="card-title-5"
+                class="text-[#00303C] text-2xl font-medium mt-4"
+              >
+                Integrate OpenAI API
+              </h2>
+
+              <p
+                class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl"
+              >
                 Debug using Chrome DevTools, check for overlapping elements and
                 ensure onClick works properly and ensure onClick works properly
               </p>
               <div class="flex mt-5 justify-between items-center">
-                <div  class="text-[#00303C]">
+                <div class="text-[#00303C]">
                   <h4 class="text-sm">Deadline</h4>
                   <h3 class="font-medium text-base">27 March 2025</h3>
                 </div>
-                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+                <button
+                  id="completed-btn-5"
+                  class="completed-btn btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg"
+                >
+                  Completed
+                </button>
               </div>
             </div>
 
             <!-- box-06 -->
             <div class="bg-[#F4F7FF] rounded-2xl p-4">
               <span class="bg-[#FFFFFF] p-2 rounded-lg">Glassdoar</span>
-              <h2 class="text-[#00303C] text-2xl font-medium mt-4">Improve Job searching </h2>
-              
-              <p class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl">
+              <h2
+                id="card-title-6"
+                class="text-[#00303C] text-2xl font-medium mt-4"
+              >
+                Improve Job searching
+              </h2>
+
+              <p
+                class="text-[#000000] text-base mt-4 bg-[#FFFFFF] p-3 rounded-xl"
+              >
                 Debug using Chrome DevTools, check for overlapping elements and
                 ensure onClick works properly and ensure onClick works properly
               </p>
               <div class="flex mt-5 justify-between items-center">
-                <div  class="text-[#00303C]">
+                <div class="text-[#00303C]">
                   <h4 class="text-sm">Deadline</h4>
                   <h3 class="font-medium text-base">29 March 2025</h3>
                 </div>
-                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg">Completed</button>
+                <button
+                  id="completed-btn-6"
+                  class="completed-btn btn font-medium text-[#FFFFFF] bg-[#3752FD] p-3 rounded-lg"
+                >
+                  Completed
+                </button>
               </div>
             </div>
-
           </div>
         </div>
         <!-- activity-log related div -->
-         <div class="p-5 bg-[#FFFFFF] rounded-xl shadow-md gap-5 w-3/12">
-            <div class="flex flex-col justify-center items-center">
-                <div class="flex gap-3 mb-5">
-                    <img src="./assets/activity.png" alt="">
-                    <h2 class="text-[#00303C] text-xl font-medium">Activity Log</h2>
-                </div>
-                <button class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-4 rounded-lg mb-5">Clear History</button>
+        <div class="p-5 bg-[#FFFFFF] rounded-xl shadow-md gap-5 w-3/12">
+          <div class="flex flex-col justify-center items-center">
+            <div class="flex gap-3 mb-5">
+              <img src="./assets/activity.png" alt="" />
+              <h2 class="text-[#00303C] text-xl font-medium">Activity Log</h2>
             </div>
-            <hr class="my-6">
-            <p class="bg-[#F4F7FF] p-3 rounded-lg mb-5">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-            <p class="bg-[#F4F7FF] p-3 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
-         </div>
+            <button
+              id="clear-history-btn"
+              class="btn font-medium text-[#FFFFFF] bg-[#3752FD] p-4 rounded-lg mb-5"
+            >
+              Clear History
+            </button>
+          </div>
+          <hr class="my-6" />
+          <div id="activity-log"></div>
+        </div>
       </div>
     </div>
 
     <!-- script tags -->
 
-    <script>
-     
-  </script>
-  <script src="./JS/common-functions.js"></script>
-  <script src="./JS/date_time_colorSet.js"></script>
-    
+    <script></script>
+    <script src="./JS/common-functions.js"></script>
+    <script src="./JS/date_time_colorSet.js"></script>
   </body>
 </html>
